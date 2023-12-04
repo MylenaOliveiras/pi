@@ -1,0 +1,85 @@
+.title-pages {
+  font-size: 64px;
+  font-family: "Pacifico", cursive;
+  margin-top: 190px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 48px;
+  }
+}
+
+.info-pages {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 32px 0;
+
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
+}
+
+.subtitle-pages {
+  font-size: 40px;
+  margin-top: 32px;
+  font-family: "Pacifico", cursive;
+
+  @media screen and (max-width: 768px) {
+    font-size: 32px;
+  }
+}
+
+.title-pages,
+.info-pages,
+.subtitle-pages {
+  text-align: center;
+}
+
+.content-list {
+  display: flex;
+  justify-content: space-around;
+
+  @media screen and (max-width: 768px) {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.itens-list {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: "Pacifico", cursive;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.itens-list-row {
+  width: 680px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: "Pacifico", cursive;
+  text-align: center;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.itens-list li,
+.itens-list-row li {
+  font-family: "Pacifico", cursive;
+  font-size: 32px;
+}
+
+.title_list {
+  color: #b0d691;
+}
+
+.title_list2 {
+  color: #d768fe;
+}
