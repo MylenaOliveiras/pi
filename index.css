@@ -234,7 +234,7 @@ span {
 
 @media screen and (max-width: 768px) {
   .service-circle {
-    width: 350px;
+    max-width: 350px;
     height: 200px;
     display: flex;
     justify-content: center;
@@ -262,7 +262,6 @@ span {
 .service-circle-title {
   font-size: 40px;
   padding: 20px;
-  margin-bottom: 35px;
 }
 
 @media screen and (max-width: 768px) {
@@ -686,6 +685,7 @@ footer a {
   color: #000;
   font-size: 64px;
   font-weight: 700;
+  margin-bottom: 20px;
 
   @media screen and (max-width: 768px) {
     font-size: 40px;
@@ -697,7 +697,8 @@ footer a {
   margin-bottom: 10px;
 
   @media screen and (max-width: 768px) {
-    font-size: 32px;
+    margin-top: 20px;
+    font-size: 28px;
   }
 }
 
@@ -719,7 +720,6 @@ footer a {
   font-family: "Quicksand", cursive;
   font-size: 24px;
   padding: 10px 20px;
-  margin-top: 20px;
   cursor: pointer;
 
   @media screen and (max-width: 768px) {

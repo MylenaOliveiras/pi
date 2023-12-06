@@ -3,296 +3,425 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/Logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/Logo.png" type="image/x-icon" />
     <title>Fratelli Cacau</title>
-    <link rel="stylesheet" href="index.css" >
+    <link rel="stylesheet" href="index.css" />
   </head>
-  <body>
-    <nav id="nav-desktop">
-      <ul class="nav-itens">
-        <li><a href="#">Home</a></li>
-        <li><a href="#about-us">Sobre nós</a></li>
-      </ul>
-      <div id="nav-logo">
-        <img src="./images/Logo.png"/>
-      </div>
-      <ul class="nav-itens">
-        <li><a href="#products">Produtos</a></li>
-        <li><a href="#our-contacts">Contato</a></li>
-      </ul>
-    </nav>
-    <nav id="nav-mobile">
-      <div id="nav-logo">
-        <img src="./images/Logo.png"/>
-      </div>
-    </nav>
+  <html>
+    <body>
+      <nav id="nav-desktop">
+        <ul class="nav-itens">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about-us">Sobre nós</a></li>
+        </ul>
+        <div id="nav-logo">
+          <img src="./images/Logo.png" />
+        </div>
+        <ul class="nav-itens">
+          <li><a href="#products">Produtos</a></li>
+          <li><a href="#our-contacts">Contato</a></li>
+        </ul>
+      </nav>
+      <nav id="nav-mobile">
+        <div id="nav-logo">
+          <img src="./images/Logo.png" />
+        </div>
+      </nav>
       <div class="slider">
         <div class="slides">
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <div class="slide first">
-                <img src="./images/banner.png" alt="Imagem 1">
-                  <div class="slide-text">
-                    <h1>Receba em casa</h1>
-                    <a href="https://api.whatsapp.com/message/KNKVTXADGL56M1?autoload=1&app_absent=0"><button class="slide-button">Orçamentos</button></button></a>
-                </div>
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+          <div class="slide first">
+            <img src="./images/banner.png" alt="Imagem 1" />
+            <div class="slide-text">
+              <h1>Receba em casa</h1>
+              <a
+                href="https://api.whatsapp.com/message/KNKVTXADGL56M1?autoload=1&app_absent=0"
+                class="slide-button"
+                >Orçamentos</a
+              >
             </div>
-            <div class="slide">
-              <img src="./images/banner2.png" alt="Imagem 2">     
-              <div class="slide-text">
-                <h2>Também temos cupcakes!</h2>
-                <p>Faça sua encomenda e experimente essas pequenas explosões de felicidade.</p>
-            </div>       
+          </div>
+          <div class="slide">
+            <img src="./images/banner2.png" alt="Imagem 2" />
+            <div class="slide-text">
+              <h2>Também temos cupcakes!</h2>
+              <p>
+                Faça sua encomenda e experimente essas pequenas explosões de
+                felicidade.
+              </p>
             </div>
-            <div class="slide">
-              <img src="./images/banner3.png" alt="Imagem 1"> 
-              <div class="slide-text">
+          </div>
+          <div class="slide">
+            <img src="./images/banner3.png" alt="Imagem 1" />
+            <div class="slide-text">
               <h2>Não resistiu aos brigadeiros?</h2>
-              <p>Encomende agora e tenha essa doçura à sua porta!</p>    
-              </div>
+              <p>Encomende agora e tenha essa doçura à sua porta!</p>
             </div>
-            <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-            </div>
+          </div>
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+          </div>
         </div>
 
         <div class="manual-navigation">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
         </div>
-    </div>
-    <section id="about-us">
-      <div class="title">
-        <hr>
-        <h2>Sobre nós</h2>
-        <hr>
       </div>
-    <p id="subtitle">Somos uma confeitaria artesanal que preza por oferecer o simples bem feito. Com uma variedade de bolos e sobremesas, buscamos proporcionar momentos únicos e saborosos. Nossa equipe, composta por dois confeiteiros com mais de 20 anos de experiência e uma administradora, visa garantir produtos de alta qualidade e atendimento excepcional. Nosso propósito vai além do sabor; queremos transformar doces em amor e contribuir para dias mais gostosos. Venha conhecer a Fratelli, onde a dedicação aos ingredientes, padronização dos produtos e carinho depositado em cada preparo fazem a diferença. Acreditamos que cada cliente faz parte da nossa história, e será um prazer compartilhar nossos doces e trajetória com você!</p>
-  </section>
+      <section id="about-us">
+        <div class="title">
+          <hr />
+          <h2>Sobre nós</h2>
+          <hr />
+        </div>
+        <p id="subtitle">
+          Somos uma confeitaria artesanal que preza por oferecer o simples bem
+          feito. Com uma variedade de bolos e sobremesas, buscamos proporcionar
+          momentos únicos e saborosos. Nossa equipe, composta por dois
+          confeiteiros com mais de 20 anos de experiência e uma administradora,
+          visa garantir produtos de alta qualidade e atendimento excepcional.
+          Nosso propósito vai além do sabor; queremos transformar doces em amor
+          e contribuir para dias mais gostosos. Venha conhecer a Fratelli, onde
+          a dedicação aos ingredientes, padronização dos produtos e carinho
+          depositado em cada preparo fazem a diferença. Acreditamos que cada
+          cliente faz parte da nossa história, e será um prazer compartilhar
+          nossos doces e trajetória com você!
+        </p>
+      </section>
 
-  <section id="products">
-    <div class="title">
-      <hr>
-      <h2>Produtos</h2>
-      <hr>
-    </div>
+      <section id="products">
+        <div class="title">
+          <hr />
+          <h2>Produtos</h2>
+          <hr />
+        </div>
 
-  <div id="products-grid">
-    <div class="products-item">
-      <a href="./pages/bolos.html">
-      <img src="./images/produtos-bolo.png" class="products-image"/>
-      </a>
-      <div class="products-description" style="background-color: #c12d3d;">
-     <span>Bolos</span>
-    </div>
-    </div>
-
-    <div class="products-item">
-      <a href="./pages/doces.html">
-        <img src="./images/produtos-doces.png" class="products-image"/>
-      </a>
-      <div class="products-description" style="background-color: #6796C0;">
-     <span>Doces</span>
-    </div>
-    </div>
-    <div class="products-item">
-      <a href="./pages/copo.html">
-        <img src="./images/produtos-copo-da-felicidade.png" class="products-image"/>
-      </a>
-      <div class="products-description" style="background-color: #D768FE;">
-     <span>Copo da felicidade</span>
-    </div>
-    </div>
-    <div class="products-item">
-      <a href="./pages/novidades.html">
-      <img src="./images/produtos-novidades.png" class="products-image"/>
-      </a>
-      <div class="products-description" style="background-color: #C0E2A5;">
-     <span>Novidades</span>
-    </div>
-    </div>
-    <div class="products-item">
-      <a href="./pages/presentes.html">
-      <img src="./images/produtos-presentes.png" class="products-image"/>
-      </a>
-      <div class="products-description" style="background-color: #E2C3A5;">
-     <span>Presentes</span>
-    </div>
-    </div>
-    <div class="products-item">
-      <a href="./pages/tortas.html">
-      <img src="./images/produtos-tortas.png" class="products-image"/>
-      </a>
-      <div class="products-description" style="background-color: #E5BB0F;">
-     <span>Tortas</span>
-    </div>
-    </div>
-  </div>
-  </section>
-    <section id="services">
-          <div class="title">
-            <hr>
-            <h2>Serviços</h2>
-            <hr>
+        <div id="products-grid">
+          <div class="products-item">
+            <a href="./pages/bolos.html">
+              <img src="./images/produtos-bolo.png" class="products-image" />
+            </a>
+            <div class="products-description" style="background-color: #c12d3d">
+              <span>Bolos</span>
+            </div>
           </div>
-            <p id="subtitle">Delícias especializadas para cada ocasião </p>
-            <div class="service-circle">
-                <div id="service-circle-figure-one" class="service-circle-figure">
-                    <img src="./images/sob-encomenda.png" alt="imagem exemplo">
-                </div>
-                <div id="service-circle-content-one" class="service-circle-content">
-                    <h3 class="service-circle-title">Sob encomenda</h3>
-                    <p class="service-circle-p">Breve descrição sobre os produtos que tem disponível sob encomenda</p>
-                </div>
-            </div> 
-            <div class="service-circle" >
-              <div id="service-circle-content-two" class="service-circle-content">
-                <h3 class="service-circle-title">Pronto-entrega</h3>
-                <p class="service-circle-p">Breve descrição sobre os produtos que tem disponível a pronto entrega</p>
+
+          <div class="products-item">
+            <a href="./pages/doces.html">
+              <img src="./images/produtos-doces.png" class="products-image" />
+            </a>
+            <div class="products-description" style="background-color: #6796c0">
+              <span>Doces</span>
             </div>
-                <div id="service-circle-figure-two" class="service-circle-figure">
-                    <img src="./images/pronto-entrega.png" alt="imagem exemplo">
-                </div>
-            </div>
-          </section>
-          <section id="gallery">
-            <div class="gallery-grid">
-                <div class="content-gallery li-2 col-2">
-                    <img class="gallery-image" src="./images/ovodepascoa.png" alt="">
-                    <span class="image-subtitle"></span>
-                    
-                </div>
-                <div class="content-gallery li-1 col-1">
-                    <img class="gallery-image" src="./images/bolo1.png" alt="">
-                    <span class="image-subtitle"></span>
-                </div>
-                <div class="content-gallery li-1 col-1">
-                    <img class="gallery-image" src="./images/torta.png" alt="">
-                    <span class="image-subtitle"></span>
-                </div>
-                <div class="content-gallery li-1 col-2">
-                    <img class="gallery-image" src="./images/brigadeiro.png" alt="">
-                    <span class="image-subtitle"></span>
-                </div>
-              </div>
-          </section>
-    <section id="our-contacts">
-          <div class="title">
-            <hr>
-            <h2>Nossas redes</h2>
-            <hr>
           </div>
-            <div class="links-contacts">
-                <a href="https://api.whatsapp.com/message/KNKVTXADGL56M1?autoload=1&app_absent=0"><img src="./images/whatsapp.jpg" alt="Logo WhatsApp"></a>
-                <a href="https://instagram.com/fratellicacau?igshid=MTk0NTkyODZkYg=="><img src="./images/instagram.png" alt="Logo Instagram"></a>
-                <a href="https://web.facebook.com/fratellicacau/?_rdc=1&_rdr"><img src="./images/facebook.png" alt="Logo Facebook"></a>
-                <a href="https://www.ifood.com.br/delivery/sao-paulo-sp/fratelli-cacau-capao-redondo/e6953e44-791b-4cad-9fbf-bc71dbea1c3b?utm_medium=share"><img class="logo-ifood" src="./images/ifood.jpg" alt="Logo Ifood"></a>
+          <div class="products-item">
+            <a href="./pages/copo.html">
+              <img
+                src="./images/produtos-copo-da-felicidade.png"
+                class="products-image"
+              />
+            </a>
+            <div class="products-description" style="background-color: #d768fe">
+              <span>Copo da felicidade</span>
             </div>
-    </section>
-    <section id="depositions">
-      <div class="title">
-        <hr>
+          </div>
+          <div class="products-item">
+            <a href="./pages/novidades.html">
+              <img
+                src="./images/produtos-novidades.png"
+                class="products-image"
+              />
+            </a>
+            <div class="products-description" style="background-color: #c0e2a5">
+              <span>Novidades</span>
+            </div>
+          </div>
+          <div class="products-item">
+            <a href="./pages/presentes.html">
+              <img
+                src="./images/produtos-presentes.png"
+                class="products-image"
+              />
+            </a>
+            <div class="products-description" style="background-color: #e2c3a5">
+              <span>Presentes</span>
+            </div>
+          </div>
+          <div class="products-item">
+            <a href="./pages/tortas.html">
+              <img src="./images/produtos-tortas.png" class="products-image" />
+            </a>
+            <div class="products-description" style="background-color: #e5bb0f">
+              <span>Tortas</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="services">
+        <div class="title">
+          <hr />
+          <h2>Serviços</h2>
+          <hr />
+        </div>
+        <p id="subtitle">Delícias especializadas para cada ocasião</p>
+        <a
+          href="https://api.whatsapp.com/message/KNKVTXADGL56M1?autoload=1&app_absent=0"
+        >
+          <div class="service-circle">
+            <div id="service-circle-figure-one" class="service-circle-figure">
+              <img src="./images/sob-encomenda.png" alt="imagem exemplo" />
+            </div>
+
+            <div id="service-circle-content-one" class="service-circle-content">
+              <h3 class="service-circle-title">Sob encomenda</h3>
+              <p class="service-circle-p">
+                Pedidos com até 2/3 dias de antecedência e solicitamos 50% do
+                valor; para maiores informações, clique aqui!
+              </p>
+            </div>
+          </div>
+        </a>
+        <a
+          href="https://www.ifood.com.br/delivery/sao-paulo-sp/fratelli-cacau-capao-redondo/e6953e44-791b-4cad-9fbf-bc71dbea1c3b?utm_medium=share"
+        >
+          <div class="service-circle">
+            <div id="service-circle-content-two" class="service-circle-content">
+              <h3 class="service-circle-title">Pronto-entrega</h3>
+              <p class="service-circle-p">
+                Produtos de envio imeditado, disponível conforme a produçao do
+                dia, para maiores informações, clique aqui!
+              </p>
+            </div>
+            <div id="service-circle-figure-two" class="service-circle-figure">
+              <img src="./images/pronto-entrega.png" alt="imagem exemplo" />
+            </div>
+          </div>
+        </a>
+      </section>
+      <section id="gallery">
+        <div class="gallery-grid">
+          <div class="content-gallery li-2 col-2">
+            <img class="gallery-image" src="./images/ovodepascoa.png" alt="" />
+            <span class="image-subtitle"></span>
+          </div>
+          <div class="content-gallery li-1 col-1">
+            <img class="gallery-image" src="./images/bolo1.png" alt="" />
+            <span class="image-subtitle"></span>
+          </div>
+          <div class="content-gallery li-1 col-1">
+            <img class="gallery-image" src="./images/torta.png" alt="" />
+            <span class="image-subtitle"></span>
+          </div>
+          <div class="content-gallery li-1 col-2">
+            <img class="gallery-image" src="./images/brigadeiro.png" alt="" />
+            <span class="image-subtitle"></span>
+          </div>
+        </div>
+      </section>
+      <section id="our-contacts">
+        <div class="title">
+          <hr />
+          <h2>Nossas redes</h2>
+          <hr />
+        </div>
+        <div class="links-contacts">
+          <a
+            href="https://api.whatsapp.com/message/KNKVTXADGL56M1?autoload=1&app_absent=0"
+            ><img src="./images/whatsapp.jpg" alt="Logo WhatsApp"
+          /></a>
+          <a href="https://instagram.com/fratellicacau?igshid=MTk0NTkyODZkYg=="
+            ><img src="./images/instagram.png" alt="Logo Instagram"
+          /></a>
+          <a href="https://web.facebook.com/fratellicacau/?_rdc=1&_rdr"
+            ><img src="./images/facebook.png" alt="Logo Facebook"
+          /></a>
+          <a
+            href="https://www.ifood.com.br/delivery/sao-paulo-sp/fratelli-cacau-capao-redondo/e6953e44-791b-4cad-9fbf-bc71dbea1c3b?utm_medium=share"
+            ><img class="logo-ifood" src="./images/ifood.jpg" alt="Logo Ifood"
+          /></a>
+        </div>
+      </section>
+      <section id="depositions">
+        <div class="title">
+          <hr />
           <h2>Depoimentos</h2>
-        <hr>
-      </div>
-      <div class="list-depositions">
-        <div class="item-depositions">
-          <div class="header-depositions">
-            <div class="speech-marks-depositions">
-              <img src="./images/aspas.png" alt="Ícone aspas">
+          <hr />
+        </div>
+        <div class="list-depositions">
+          <div class="item-depositions">
+            <div class="header-depositions">
+              <div class="speech-marks-depositions">
+                <img src="./images/aspas.png" alt="Ícone aspas" />
+              </div>
+              <div class="user-depositions">
+                <img src="./images/user3.jpg" alt="Ícone usuário" />
+              </div>
             </div>
-            <div class="user-depositions">
-              <img src="./images/user.png" alt="Ícone usuário">
+            <div class="statement">
+              <p>
+                Encomendei um bolo de aniversário para minha mãe, todos amaram,
+                o sabor foi de maracujá com cocada cremosa, o melhor quejá comi,
+                é doce na medida certa, com certeza voltarei a comprar com a
+                Fratelli Cacau, nota 1000
+              </p>
             </div>
           </div>
-          <div class="statement">
-            <p>Lorem ipsum dolor sit amet. Ut neque aliquid aut quidem veritatis sit voluptas sequi qui quam ipsum est asperiores voluptatem. Ut perspiciatis inventore in mollitia eius et galisum molestias.
-            </p>
+          <div class="item-depositions">
+            <div class="header-depositions">
+              <div class="speech-marks-depositions">
+                <img src="./images/aspas.png" alt="Ícone aspas" />
+              </div>
+              <div class="user-depositions">
+                <img src="./images/user1.jpg" alt="Ícone usuário" />
+              </div>
+            </div>
+            <div class="statement">
+              <p>
+                Uma qualidade impecável, cada mordida, uma sensação diferente! É
+                nítido a qualidade dos materiais usados, com certeza virou meu
+                lugar favorito para comprar doces, bolos, tudo de confeitaria.
+              </p>
+            </div>
+          </div>
+          <div class="item-depositions">
+            <div class="header-depositions">
+              <div class="speech-marks-depositions">
+                <img src="./images/aspas.png" alt="Ícone aspas" />
+              </div>
+              <div class="user-depositions">
+                <img src="./images/user2.jpg" alt="Ícone usuário" />
+              </div>
+            </div>
+            <div class="statement">
+              <p>
+                Ganharam uma cliente fixa para o resto da vidaaaa! O copo da
+                felicidade realmente tras uma felicidade para quem consome rsrs,
+                não fico sem, comprem sem medo.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="item-depositions">
-          <div class="header-depositions">
-            <div class="speech-marks-depositions">
-              <img src="./images/aspas.png" alt="Ícone aspas">
-            </div>
-            <div class="user-depositions">
-              <img src="./images/user.png" alt="Ícone usuário">
-            </div>
-          </div>
-          <div class="statement">
-            <p>Lorem ipsum dolor sit amet. Ut neque aliquid aut quidem veritatis sit voluptas sequi qui quam ipsum est asperiores voluptatem. Ut perspiciatis inventore in mollitia eius et galisum molestias.
-            </p>
-          </div>
-        </div>
-        <div class="item-depositions">
-          <div class="header-depositions">
-            <div class="speech-marks-depositions">
-              <img src="./images/aspas.png" alt="Ícone aspas">
-            </div>
-            <div class="user-depositions">
-              <img src="./images/user.png" alt="Ícone usuário">
-            </div>
-          </div>
-          <div class="statement">
-            <p>Lorem ipsum dolor sit amet. Ut neque aliquid aut quidem veritatis sit voluptas sequi qui quam ipsum est asperiores voluptatem. Ut perspiciatis inventore in mollitia eius et galisum molestias.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div id="logo_footer">
-          <img src="images/logo_footer.png" alt="logo">
+      </section>
+      <footer>
+        <div id="logo_footer">
+          <img src="images/logo_footer.png" alt="logo" />
           <p>Os sabores que você ama, em um orçamento que você adora!</p>
-      </div>
-      <div id="content-lists">
+        </div>
+        <div id="content-lists">
           <div class="Home">
-              <ul>
-                  <li class="title-list"><a href="#">Home</a></li>
-                  <li><a href="#products">Produtos</a></li>
-                  <li><a href="https://www.ifood.com.br/delivery/sao-paulo-sp/fratelli-cacau-capao-redondo/e6953e44-791b-4cad-9fbf-bc71dbea1c3b?utm_medium=share"  target="_blank">Delivery</a></li>
-                  <li><a href="#depositions">Avaliações</a></li>
-              </ul>
+            <ul>
+              <li class="title-list"><a href="#">Home</a></li>
+              <li><a href="#products">Produtos</a></li>
+              <li>
+                <a
+                  href="https://www.ifood.com.br/delivery/sao-paulo-sp/fratelli-cacau-capao-redondo/e6953e44-791b-4cad-9fbf-bc71dbea1c3b?utm_medium=share"
+                  target="_blank"
+                  >Delivery</a
+                >
+              </li>
+              <li><a href="#depositions">Avaliações</a></li>
+            </ul>
           </div>
           <div class="Produtos">
-              <ul>
-                  <li class="title-list"><a href="#products">Produtos</a></li>
-                  <li><a href="#">Bolos</a></li>
-                  <li><a href="#">Doces de festa</a></li>
-                  <li><a href="#">Copo da Felicidade</a></li>
-                  <li><a href="#">Brownies</a></li>
-                  <li><a href="#">Tortas Doces</a></li>
-              </ul>
+            <ul>
+              <li class="title-list"><a href="#products">Produtos</a></li>
+              <li><a href="#">Bolos</a></li>
+              <li><a href="#">Doces de festa</a></li>
+              <li><a href="#">Copo da Felicidade</a></li>
+              <li><a href="#">Brownies</a></li>
+              <li><a href="#">Tortas Doces</a></li>
+            </ul>
           </div>
           <div class="Sobre">
-              <ul>
-                  <li class="title-list"><a href="#about-us">Sobre nós</a></li>
-                  <li><a href="#about-us">História</a></li>
-                  <li><a href="https://api.whatsapp.com/message/KNKVTXADGL56M1?autoload=1&app_absent=0" target="_blank">Orçamentos</a></li>
-              </ul>
+            <ul>
+              <li class="title-list"><a href="#about-us">Sobre nós</a></li>
+              <li><a href="#about-us">História</a></li>
+              <li>
+                <a
+                  href="https://api.whatsapp.com/message/KNKVTXADGL56M1?autoload=1&app_absent=0"
+                  target="_blank"
+                  >Orçamentos</a
+                >
+              </li>
+            </ul>
           </div>
           <div class="Contatos">
-              <ul>
-                  <li class="title-list"><a href="#our-contacts">Contatos</a></li>
-                  <li><a href="tel:+5511954992144" target="_blank"></a>+55 11 95499-2144</a></li>
-                  <li><a href="mailto:fratellicacau@gmail.com" target="_blank">fratellicacau@gmail.com</a></li>
-                  <li>Capão Redondo, SP</li>
-              </ul>
-              <ul id="icones">
-                  <li><a href="https://api.whatsapp.com/message/KNKVTXADGL56M1?autoload=1&app_absent=0" target="_blank"><img src="images/whatsapp.jpg" width="50" height="50" alt="ícone whatsapp"></a></li>
-                  <li><a href="https://instagram.com/fratellicacau?igshid=MTk0NTkyODZkYg=="  target="_blank"><img src="images/instagram.png" width="50" height="50" alt="ícone instagram"></a></li>
-                  <li><a href="https://web.facebook.com/fratellicacau/?_rdc=1&_rdr" target="_blank"><img src="images/facebook.png" width="50" height="50" alt="ícone facebook"></a></li>
-                  <li><a href="https://www.ifood.com.br/delivery/sao-paulo-sp/fratelli-cacau-capao-redondo/e6953e44-791b-4cad-9fbf-bc71dbea1c3b?utm_medium=share" target="_blank"><img src="images/ifood.jpg" width="50" height="50" class="logo-ifood" alt="ícone ifood"></a></li>
-              </ul>
+            <ul>
+              <li class="title-list"><a href="#our-contacts">Contatos</a></li>
+              <li>
+                <a href="tel:+5511954992144" target="_blank"
+                  >+55 11 95499-2144</a
+                >
+              </li>
+              <li>
+                <a href="mailto:fratellicacau@gmail.com" target="_blank"
+                  >fratellicacau@gmail.com</a
+                >
+              </li>
+              <li>Capão Redondo, SP</li>
+            </ul>
+            <ul id="icones">
+              <li>
+                <a
+                  href="https://api.whatsapp.com/message/KNKVTXADGL56M1?autoload=1&app_absent=0"
+                  target="_blank"
+                  ><img
+                    src="images/whatsapp.jpg"
+                    width="50"
+                    height="50"
+                    alt="ícone whatsapp"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://instagram.com/fratellicacau?igshid=MTk0NTkyODZkYg=="
+                  target="_blank"
+                  ><img
+                    src="images/instagram.png"
+                    width="50"
+                    height="50"
+                    alt="ícone instagram"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://web.facebook.com/fratellicacau/?_rdc=1&_rdr"
+                  target="_blank"
+                  ><img
+                    src="images/facebook.png"
+                    width="50"
+                    height="50"
+                    alt="ícone facebook"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.ifood.com.br/delivery/sao-paulo-sp/fratelli-cacau-capao-redondo/e6953e44-791b-4cad-9fbf-bc71dbea1c3b?utm_medium=share"
+                  target="_blank"
+                  ><img
+                    src="images/ifood.jpg"
+                    width="50"
+                    height="50"
+                    class="logo-ifood"
+                    alt="ícone ifood"
+                /></a>
+              </li>
+            </ul>
           </div>
-      </div>
-     </footer> 
+        </div>
+      </footer>
+    </body>
+  </html>
+  <script src="script.js"></script>
 </html>
-<script src="script.js"></script>
