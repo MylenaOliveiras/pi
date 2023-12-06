@@ -29,22 +29,52 @@
         <img src="./images/Logo.png"/>
       </div>
     </nav>
-    <section id="banner">
-      <img src="./images/banner-oficial.png"/>
-      <!-- <img src="./images/image 3.png"/>
-      <img src="./images/image 4.png"/> -->
-      <div>
-        <h1>Receba em casa</h1>
-        <a href="https://api.whatsapp.com/message/KNKVTXADGL56M1?autoload=1&app_absent=0"><button>Orçamentos</button></a>
-      </div>
-    </section>
+      <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <div class="slide first">
+                <img src="./images/banner.png" alt="Imagem 1">
+                  <div class="slide-text">
+                    <h1>Receba em casa</h1>
+                    <a href="https://api.whatsapp.com/message/KNKVTXADGL56M1?autoload=1&app_absent=0"><button class="slide-button">Orçamentos</button></button></a>
+                </div>
+            </div>
+            <div class="slide">
+              <img src="./images/banner2.png" alt="Imagem 2">     
+              <div class="slide-text">
+                <h2>Também temos cupcakes!</h2>
+                <p>Faça sua encomenda e experimente essas pequenas explosões de felicidade.</p>
+            </div>       
+            </div>
+            <div class="slide">
+              <img src="./images/banner3.png" alt="Imagem 1"> 
+              <div class="slide-text">
+              <h2>Não resistiu aos brigadeiros?</h2>
+              <p>Encomende agora e tenha essa doçura à sua porta!</p>    
+              </div>
+            </div>
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+        </div>
+
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
+    </div>
     <section id="about-us">
       <div class="title">
         <hr>
         <h2>Sobre nós</h2>
         <hr>
       </div>
-    <p id="subtitle">Na Fratelli Cacau, nossa paixão é transformar ingredientes em delícias irresistíveis. Desde (ano de fundação), dedicamos nossos dias à criação de doces artesanais que encantam paladares. Combinamos tradição e inovação para oferecer momentos doces e memoráveis a cada cliente.</p>
+    <p id="subtitle">Somos uma confeitaria artesanal que preza por oferecer o simples bem feito. Com uma variedade de bolos e sobremesas, buscamos proporcionar momentos únicos e saborosos. Nossa equipe, composta por dois confeiteiros com mais de 20 anos de experiência e uma administradora, visa garantir produtos de alta qualidade e atendimento excepcional. Nosso propósito vai além do sabor; queremos transformar doces em amor e contribuir para dias mais gostosos. Venha conhecer a Fratelli, onde a dedicação aos ingredientes, padronização dos produtos e carinho depositado em cada preparo fazem a diferença. Acreditamos que cada cliente faz parte da nossa história, e será um prazer compartilhar nossos doces e trajetória com você!</p>
   </section>
 
   <section id="products">
@@ -56,44 +86,50 @@
 
   <div id="products-grid">
     <div class="products-item">
-      <img src="./images/produtos-bolo.png"
-      class="products-image"/>
+      <a href="./pages/bolos.html">
+      <img src="./images/produtos-bolo.png" class="products-image"/>
+      </a>
       <div class="products-description" style="background-color: #c12d3d;">
      <span>Bolos</span>
     </div>
     </div>
 
     <div class="products-item">
-      <img src="./images/produtos-doces.png"
-      class="products-image"/>
+      <a href="./pages/doces.html">
+        <img src="./images/produtos-doces.png" class="products-image"/>
+      </a>
       <div class="products-description" style="background-color: #6796C0;">
      <span>Doces</span>
     </div>
     </div>
     <div class="products-item">
-      <img src="./images/produtos-copo-da-felicidade.png"
-      class="products-image"/>
+      <a href="./pages/copo.html">
+        <img src="./images/produtos-copo-da-felicidade.png" class="products-image"/>
+      </a>
       <div class="products-description" style="background-color: #D768FE;">
      <span>Copo da felicidade</span>
     </div>
     </div>
     <div class="products-item">
-      <img src="./images/produtos-novidades.png"
-      class="products-image"/>
+      <a href="./pages/novidades.html">
+      <img src="./images/produtos-novidades.png" class="products-image"/>
+      </a>
       <div class="products-description" style="background-color: #C0E2A5;">
      <span>Novidades</span>
     </div>
     </div>
     <div class="products-item">
-      <img src="./images/produtos-presentes.png"
-      class="products-image"/>
+      <a href="./pages/presentes.html">
+      <img src="./images/produtos-presentes.png" class="products-image"/>
+      </a>
       <div class="products-description" style="background-color: #E2C3A5;">
      <span>Presentes</span>
     </div>
     </div>
     <div class="products-item">
-      <img src="./images/produtos-tortas.png"
-      class="products-image"/>
+      <a href="./pages/tortas.html">
+      <img src="./images/produtos-tortas.png" class="products-image"/>
+      </a>
       <div class="products-description" style="background-color: #E5BB0F;">
      <span>Tortas</span>
     </div>
@@ -259,3 +295,4 @@
       </div>
      </footer> 
 </html>
+<script src="script.js"></script>
