@@ -15,8 +15,8 @@
 
 body {
   background: linear-gradient(
-      rgba(255, 255, 255, 0.8),
-      rgba(255, 255, 255, 0.8)
+      rgba(255, 255, 255, 0.85),
+      rgba(255, 255, 255, 0.85)
     ),
     url("./images/background.png") center/cover fixed;
   background-size: 480px;
@@ -103,74 +103,6 @@ h3 {
     justify-content: center;
     top: 0;
   }
-}
-
-#banner {
-  display: flex;
-  margin-top: 90px;
-  align-items: center;
-  position: relative;
-}
-
-#banner div {
-  position: absolute;
-  margin-left: 180px;
-
-  @media screen and (max-width: 768px) {
-    margin-left: 32px;
-  }
-}
-
-#banner h1 {
-  font-family: "Quicksand", cursive;
-  color: #000;
-  font-size: 64px;
-  font-weight: 700;
-}
-
-@media screen and (max-width: 768px) {
-  #banner h1 {
-    font-size: 40px;
-  }
-}
-
-#banner button {
-  background: #684728;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  font-family: "Quicksand", cursive;
-  font-size: 24px;
-  padding: 10px 20px;
-  margin-top: 20px;
-  cursor: pointer;
-}
-
-@media screen and (max-width: 768px) {
-  #banner button {
-    font-size: 20px;
-  }
-}
-
-#banner img {
-  min-width: 100%;
-  height: 424px;
-  object-fit: cover;
-  object-position: 50% 60%;
-}
-
-#banner::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    rgba(255, 255, 255, 0.5),
-    rgba(255, 255, 255, 0.5)
-  );
-  pointer-events: none;
 }
 
 .title {
@@ -525,6 +457,7 @@ span {
 
 .user-depositions img {
   height: 70px;
+  border-radius: 50%;
 }
 
 footer {
@@ -533,7 +466,9 @@ footer {
   background-color: #684728;
   color: #fff;
   padding: 20px;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 64px;
+  margin-top: 64px;
 }
 
 @media screen and (max-width: 768px) {
@@ -559,11 +494,6 @@ footer {
     justify-content: center;
     gap: 20px;
   }
-}
-
-#logo_footer img {
-  object-fit: cover;
-  width: 100%;
 }
 
 footer p {
@@ -632,4 +562,167 @@ footer a {
 
 .logo-ifood {
   border-radius: 5px;
+}
+
+.slider {
+  margin: 90px 0;
+  height: 428px;
+  overflow: hidden;
+}
+
+.slides {
+  width: 400%;
+  height: 428px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 25%;
+  position: relative;
+  transition: 5s;
+}
+
+.slide img {
+  width: 100%;
+  height: 428px;
+  object-fit: cover;
+}
+
+.slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5)
+  );
+  pointer-events: none;
+}
+.manual-navigation {
+  position: absolute;
+  width: 100%;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background-color: #fff;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -50%;
+}
+
+.navigation-auto div {
+  border: 2px solid #684728;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.navigation-auto {
+  position: absolute;
+  width: 100%;
+  margin-top: 388px;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background-color: #fff;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background-color: #fff;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background-color: #fff;
+}
+
+.slide-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+.slide-text h1 {
+  font-family: "Quicksand", cursive;
+  color: #000;
+  font-size: 64px;
+  font-weight: 700;
+
+  @media screen and (max-width: 768px) {
+    font-size: 40px;
+  }
+}
+
+.slide-text h2 {
+  font-size: 56px;
+  margin-bottom: 10px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 32px;
+  }
+}
+
+.slide-text p {
+  color: #000;
+  font-size: 24px;
+  font-weight: 800;
+
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.slide-button {
+  background: #684728;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-family: "Quicksand", cursive;
+  font-size: 24px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  }
 }
