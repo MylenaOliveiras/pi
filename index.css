@@ -91,6 +91,21 @@ h3 {
   display: none;
 }
 
+#nav-mobile-button {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 0;
+  margin-left: 12px;
+  background: none;
+  border: none;
+}
+
+#nav-mobile-button img {
+  width: 24px;
+  height: 24px;
+}
+
 @media screen and (max-width: 768px) {
   #nav-mobile {
     display: flex;
@@ -234,11 +249,12 @@ span {
 
 @media screen and (max-width: 768px) {
   .service-circle {
-    max-width: 350px;
+    max-width: 300px;
     height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 16px;
   }
 }
 
@@ -455,8 +471,10 @@ span {
 }
 
 .user-depositions img {
+  width: 70px;
   height: 70px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 footer {
